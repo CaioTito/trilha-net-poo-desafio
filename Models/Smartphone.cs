@@ -3,16 +3,16 @@ namespace DesafioPOO.Models
     public abstract class Smartphone
     {
         public string Numero { get; set; }
-        private string _modelo;
-        private string _imei;
-        private int _memoria;
+        public string Modelo { get; private set; }
+        public string IMEI { get; private set; }
+        public int Memoria { get; private set; }
 
         public Smartphone(string numero, string modelo, string iMEI, int memoria)
         {
             Numero = numero;
-            _modelo = modelo;
-            _imei = iMEI;
-            _memoria = memoria;
+            Modelo = modelo;
+            IMEI = iMEI;
+            Memoria = memoria;
         }
 
         public void Ligar()
